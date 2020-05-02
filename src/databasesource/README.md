@@ -6,17 +6,10 @@ Requirements
 Installation
 ------------
 
-> And make sure the product view page completed in home page of the ecommerce site and 'Add Cart' button the button link is {{ route('cart::add', $product) }} -Here $product is 'single product object'.
-
-> products table, factory and seeds file download form databasesource folder in webzera/laracart.
-
-> Before use factory file, make sure Product model created
-
-```
-php artisan tinker
-factory('App\Product', 50)->create()
-```
-
+> And make sure the product view page completed in home page of the ecommerce site and 'Add Cart' button the button link is
+> {{ route('cart.add', $product) }} -Here $product is 'single product object'
+> products table download form databasesource folder in webzera/laracart 
+> 
 
 First, install laravel 7, and make sure that the database connection settings are correct.
 

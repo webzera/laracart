@@ -21,13 +21,13 @@
 	      <td>{{ $cartitem['item']['name'] }}</td>
 	      <td>{{ $cartitem['item']['price'] }}</td>
 	      <td>
-	      <form action="{{ route('cart.update', $cartitem['item']['id']) }}">   	
+	      <form action="{{ route('cart::update', $cartitem['item']['id']) }}">   	
 	      	<input name="quantity" type="number" value="{{ $cartitem['qty'] }}">
 	      	<input type="submit" value="save">
 	      	</form>
 	      </td>
 	      
-	      <td><a href="{{ route('cart.delete',$cartitem['item']['id']) }}"><i class="fas fa-trash-alt"></i>
+	      <td><a href="{{ route('cart::delete',$cartitem['item']['id']) }}"><i class="fas fa-trash-alt"></i>
 </a></td>
 		<td>{{ $cartitem['price'] }}</td>
 	    </tr>
@@ -35,6 +35,6 @@
 	  </tbody>
 	</table>	
 	<h3><small>Cart Total Amount </small>$ : {{ $totalPrice }}</h3>
-	<a href="{{ route('checkout.index') }}" class="btn btn-primary" role="button">Proceed to Checkout</a>
+	{{-- <a href="{{ route('checkout.index') }}" class="btn btn-primary" role="button">Proceed to Checkout</a> --}}
 </div>  
 @endsection

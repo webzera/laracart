@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Webzera\Laracart;
 
 use Illuminate\Database\Eloquent\Model;
 

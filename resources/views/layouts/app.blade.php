@@ -42,9 +42,9 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         <li class="nav-item">
-                            <a class="nav-link p-0 m-0" href="{{ route('cart.index') }}">
+                            <a class="nav-link p-0 m-0" href="{{ route('cart::index') }}">
                             <i class="fas fa-cart-arrow-down text-primary fa-2x"></i> @if(Session::has('webcart'))
-                            <?php $totcart=App\Cart::totalCart(); ?>
+                            <?php $totcart=Webzera\Laracart\Cart::totalCart(); ?>
                             <span class="badge badge-danger">{{$totcart}}</span>
                             <span class="badge badge-danger"><?php if($totcart) { ?>{{ Session::get('webcart')->totalQty }}<?php } ?></span>
                             @endif

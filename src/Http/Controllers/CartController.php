@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Webzera\Laracart\Http\Controllers;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Product;
-use App\Cart;
+use Webzera\Laracart\Cart;
 
 use Session;
 
@@ -26,15 +27,16 @@ class CartController extends Controller
         }
         $oldCart = Session::get('webcart');
     	$cartitems=new Cart($oldCart);
-    	return view('cart.index', ['cartitems' => $cartitems->items, 'totalPrice' => $cartitems->totalPrice]);        
+    	return view('cart::cart.index', ['cartitems' => $cartitems->items, 'totalPrice' => $cartitems->totalPrice]);        
     }
-    public function add(Request $request, Product $product)
-    {
+    public function add(Request $request, $id)
+    {        
+        $product=Product::findOrFail($id);
         $oldCart=Session::has('webcart') ? Session::get('webcart') : null;
         $cart= new Cart($oldCart);
         $cart->addCart($product, $product->id);
 
-        $request->session()->put('webcart', $cart);
+        Session::put('webcart', $cart);
         return redirect('/');
 
     }    
