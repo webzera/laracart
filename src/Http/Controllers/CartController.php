@@ -36,7 +36,7 @@ class CartController extends Controller
         $cart= new Cart($oldCart);
         $cart->addCart($product, $product->id);
 
-        Session::put('webcart', $cart);
+        $request->session()->put('webcart', $cart);
         return redirect('/');
 
     }    

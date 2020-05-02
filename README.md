@@ -6,7 +6,8 @@ Requirements
 Installation
 ------------
 
-> And make sure the product view page completed in home page of the ecommerce site and 'Add Cart' button the button link is {{ route('cart::add', $product) }} -Here $product is 'single product object'.
+> And make sure the product view page completed in home page of the ecommerce site and 'Add Cart' button the button link is {{ route('cart::add', $product) }}
+> -Here $product is 'single product object'.
 
 > products table, factory and seeds file download form databasesource folder in webzera/laracart.
 

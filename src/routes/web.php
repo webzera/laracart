@@ -2,7 +2,7 @@
 
 $namespace = 'Webzera\Laracart\HTTP\Controllers';
 
-Route::group(['namespace' => $namespace, 'prefix' => 'cart'], function(){
+Route::group(['middleware' => ['web'], 'namespace' => $namespace, 'prefix' => 'cart'], function(){
 	
 	Route::get('/addtocart/{product}', 'CartController@add')->name('cart::add');
 	Route::get('/cart', 'CartController@index')->name('cart::index');
