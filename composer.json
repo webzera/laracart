@@ -1,5 +1,5 @@
 {
-    "name": "webzera/laradmin",
+    "name": "webzera/laracart",
     "description": "This cart package is for laravel ecommerce",
     "type": "library",
     "require": {        
@@ -10,13 +10,13 @@
     },
     "autoload":{
         "psr-4": {
-            "Webzera\\Laradmin\\": "src"
+            "Webzera\\Laracart\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Webzera\\Laradmin\\Providers\\LaradminServiceProvider"
+                "Webzera\\Laracart\\Providers\\LaracartServiceProvider"
             ]
         }
     },
