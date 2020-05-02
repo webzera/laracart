@@ -22,11 +22,11 @@ factory('App\Product', 50)->create()
 First, install laravel 7, and make sure that the database connection settings are correct.
 
 ```
-composer require webzera/laracart --dev
+composer require webzera/laracart
 ```
 or
 ```
-php composer.phar require webzera/laracart --dev
+php composer.phar require webzera/laracart
 ```
 
 Then run these commands to publish assets and config：

@@ -23,7 +23,7 @@
 	      <td>
 	      <form action="{{ route('cart::update', $cartitem['item']['id']) }}">   	
 	      	<input name="quantity" type="number" value="{{ $cartitem['qty'] }}">
-	      	<input type="submit" value="save">
+	      	<input type="submit" value="update">
 	      	</form>
 	      </td>
 	      
