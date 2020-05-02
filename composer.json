@@ -1,0 +1,31 @@
+{
+    "name": "webzera/laradmin",
+    "description": "This is for separate admin panel control",
+    "type": "library",
+    "require": {        
+        "php": "^7.3",
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload":{
+        "psr-4": {
+            "Webzera\\Laracart\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webzera\\Laracart\\Providers\\LaracartServiceProvider"
+            ]
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "webzera",
+            "email": "johnszen@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
