@@ -1,22 +1,22 @@
 {
-    "name": "webzera/laracart",
-    "description": "This is for ecommerce cart management",
+    "name": "webzera/laradmin",
+    "description": "This cart package is for laravel ecommerce",
     "type": "library",
     "require": {        
-        "php": "^7.3",
+        "php": "^7.3"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.0"
     },
     "autoload":{
         "psr-4": {
-            "Webzera\\Laracart\\": "src"
+            "Webzera\\Laradmin\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Webzera\\Laracart\\Providers\\LaracartServiceProvider"
+                "Webzera\\Laradmin\\Providers\\LaradminServiceProvider"
             ]
         }
     },
