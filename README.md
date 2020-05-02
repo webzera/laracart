@@ -11,11 +11,11 @@ Installation
 First, install laravel 7, and make sure that the database connection settings are correct.
 
 ```
-composer require webzera/laracart
+composer require webzera/laracart --dev
 ```
 or
 ```
-php composer.phar require webzera/laracart
+php composer.phar require webzera/laracart --dev
 ```
 
 Then run these commands to publish assets and config：
