@@ -1,6 +1,6 @@
 {
-    "name": "webzera/laradmin",
-    "description": "This is for separate admin panel control",
+    "name": "webzera/laracart",
+    "description": "This is for ecommerce cart management",
     "type": "library",
     "require": {        
         "php": "^7.3",
