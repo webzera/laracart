@@ -38,7 +38,7 @@ class LaracartServiceProvider extends ServiceProvider
 			'controller' => [
 			],
 			'public' => [
-				 "$bashPath/publishable/public/vendor/laracart" => public_path('vendor/laracart') 
+				// "$bashPath/publishable/public/vendor/laracart" => public_path('vendor/laracart') 
 			]
 		];
 
