@@ -29,7 +29,7 @@ or
 php composer.phar require webzera/laracart
 ```
 
-Then run these commands to publish assets and config：
+Then run these commands to publish assets and config
 
 Open `http://localhost/cart/` in browser,
 
