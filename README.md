@@ -30,5 +30,7 @@ or
 php composer.phar require webzera/laracart
 ```
 
+``` php artisan vendor:publish --force ```
+
 Open `http://localhost/cart/` in browser,
 

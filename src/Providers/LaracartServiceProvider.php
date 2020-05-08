@@ -36,10 +36,11 @@ class LaracartServiceProvider extends ServiceProvider
 			'middleware' => [
 			],
 			'controller' => [
+				"$bashPath/publishable/controllers/CartController.php" => app_path('Http/controllers/CartController.php'),
 			],
 			'views' => [
-				"$bashPath/publishable/cart/index.blade.php" => resource_path('views/cart/index.blade.php'),
-				"$bashPath/publishable/layouts/cartlayout.blade.php" => resource_path('views/layouts/cartlayout.blade.php'),
+				"$bashPath/publishable/views/cart/index.blade.php" => resource_path('views/cart/index.blade.php'),
+				"$bashPath/publishable/views/layouts/cartlayout.blade.php" => resource_path('views/layouts/cartlayout.blade.php'),
 			],
 			'public' => [
 				// "$bashPath/publishable/public/vendor/laracart" => public_path('vendor/laracart') 
